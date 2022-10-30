@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Roopak Palakurty"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 02:42:33 PM"/>
+        <attribute name="created" value="Um9vcGFrIFBhbGFrdXJ0eTtERVNLVE9QLTJHUUdQS1E7MjAyMi0xMC0zMDswMjoyNzo1NCBQTTszOTc1"/>
+        <attribute name="edited" value="Um9vcGFrIFBhbGFrdXJ0eTtERVNLVE9QLTJHUUdQS1E7MjAyMi0xMC0zMDswMjo0MjozMyBQTTsxOzQwNzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ROLLNO" type="Integer" array="False" size=""/>
+            <input variable="ROLLNO"/>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <input variable="NAME"/>
+            <declare name="ADDRESS" type="String" array="False" size=""/>
+            <input variable="ADDRESS"/>
+            <declare name="BLOODGROUP" type="String" array="False" size=""/>
+            <input variable="BLOODGROUP"/>
+            <declare name="PHONENO" type="Integer" array="False" size=""/>
+            <input variable="PHONENO"/>
+            <declare name="DEPARTMENT" type="String" array="False" size=""/>
+            <input variable="DEPARTMENT"/>
+            <declare name="SEMISTER" type="String" array="False" size=""/>
+            <input variable="SEMISTER"/>
+            <declare name="FIRSTSUBJECTCODE" type="Integer" array="False" size=""/>
+            <input variable="FIRSTSUBJECTCODE"/>
+            <declare name="FIRSTSUBJECTMARKS" type="Integer" array="False" size=""/>
+            <input variable="FIRSTSUBJECTMARKS"/>
+            <declare name="SECONDSUBJECTCODE" type="Integer" array="False" size=""/>
+            <input variable="SECONDSUBJECTCODE"/>
+            <declare name="SECONDSUBJECTMARKS" type="Integer" array="False" size=""/>
+            <input variable="SECONDSUBJECTMARKS"/>
+            <declare name="TOTALMARKS" type="Integer" array="False" size=""/>
+            <assign variable="TOTALMARKS" expression="FIRSTSUBJECTMARKS+SECONDSUBJECTMARKS"/>
+            <declare name="AVERAGE" type="Integer" array="False" size=""/>
+            <assign variable="AVERAGE" expression="TOTALMARKS/2"/>
+            <output expression="&quot;ROLLNO&quot;&amp;ROLLNO&amp;&quot;NAME&quot;&amp;NAME&amp;&quot;ADDRESS&quot;&amp;ADDRESS&amp;&quot;BLOODGROUP&quot;&amp;BLOODGROUP&amp;&quot;PHONENO&quot;&amp;PHONENO&amp;&quot;DEPARTMENT&quot;&amp;DEPARTMENT&amp;&quot;SEMISTER&quot;&amp;SEMISTER&amp;&quot;FIRSTSUBJECTCODE&quot;&amp;FIRSTSUBJECTCODE&amp;&quot;FIRSTSUBJECTMARKS&quot;&amp;FIRSTSUBJECTMARKS&amp;&quot;SECONDSUBJECTCODE&quot;&amp;SECONDSUBJECTCODE&amp;&quot;SECONDSUBJECTMARKS&quot;&amp;SECONDSUBJECTMARKS&amp;&quot;TOTALMARKS&quot;&amp;TOTALMARKS&amp;&quot;AVERAGE&quot;&amp;AVERAGE" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

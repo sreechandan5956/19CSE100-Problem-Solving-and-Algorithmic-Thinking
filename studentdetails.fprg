@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Roopak Palakurty"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-30 02:26:47 PM"/>
+        <attribute name="created" value="Um9vcGFrIFBhbGFrdXJ0eTtERVNLVE9QLTJHUUdQS1E7MjAyMi0xMC0zMDswMjowNTo0MyBQTTszOTY5"/>
+        <attribute name="edited" value="Um9vcGFrIFBhbGFrdXJ0eTtERVNLVE9QLTJHUUdQS1E7MjAyMi0xMC0zMDswMjoyNjo0NyBQTTsxOzQwODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ROLLNUMBER" type="Integer" array="False" size=""/>
+            <input variable="ROLLNUMBER"/>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <input variable="NAME"/>
+            <declare name="ADDRESS" type="String" array="False" size=""/>
+            <input variable="ADDRESS"/>
+            <declare name="BLOODGROUP" type="String" array="False" size=""/>
+            <input variable="BLOODGROUP"/>
+            <declare name="PHONENUMBER" type="String" array="False" size=""/>
+            <input variable="PHONENUMBER"/>
+            <declare name="DEPARTMENT" type="String" array="False" size=""/>
+            <input variable="DEPARTMENT"/>
+            <output expression="&quot;ROLLNUMBER&quot;&amp;ROLLNUMBER&amp;&quot;NAME&quot;&amp;NAME&amp;&quot;ADDRESS&quot;&amp;ADDRESS&amp;&quot;BLOODGROUP&quot;&amp;BLOODGROUP&amp;&quot;PHONENUMBER&quot;&amp;PHONENUMBER&amp;&quot;DEPARTMENT&quot;&amp;DEPARTMENT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
