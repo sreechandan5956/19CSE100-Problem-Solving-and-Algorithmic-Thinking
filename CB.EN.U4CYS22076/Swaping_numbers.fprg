@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:35:27 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzEwOjA4OjE4IEFNOzMwNjc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzExOjM1OjI3IEFNOzU7MzE4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is helpful in swaping two numbers with out involving third variable"/>
+            <comment text="Declearing the variables&#13;&#10;"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the value of the first number&quot;" newline="True"/>
+            <comment text="saving the values"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter the value of the second number&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="performing the required functionsto swap the numbers&#13;&#10;"/>
+            <assign variable="a" expression="a+b"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <comment text="Printing the required values on the screen"/>
+            <output expression="&quot;The value of first number is &quot;&amp;a" newline="True"/>
+            <output expression="&quot;The value of second number is &quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

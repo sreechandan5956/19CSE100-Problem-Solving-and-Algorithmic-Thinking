@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:59:05 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzA5OjA5OjI2IEFNOzMwNzU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzEwOjU5OjA1IEFNOzQ7MzE4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is helpful in converting Celsius to Fahrenheit"/>
+            <comment text="Declearing the variables"/>
+            <declare name="CELSIUS" type="Real" array="False" size=""/>
+            <comment text="collecting the information from the user"/>
+            <output expression="&quot;PLEASE ENTER THE TEMPARATURE IN CELSIUS&quot;" newline="True"/>
+            <input variable="CELSIUS"/>
+            <comment text="Declearing the variables"/>
+            <declare name="Fahrenheit" type="Real" array="False" size=""/>
+            <assign variable="Fahrenheit" expression="9*CELSIUS/5+32"/>
+            <comment text="print the temperature in fahrenheit on the screen"/>
+            <output expression="&quot;THE TEMPERATURE IN FAHRENHEIT IS&quot; &amp; Fahrenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

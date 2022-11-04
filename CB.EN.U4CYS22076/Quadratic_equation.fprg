@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:03:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzA5OjI2OjI4IEFNOzMwNzY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzExOjAzOjIxIEFNOzEyOzMyMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is helpful in finding the roots of the quadratic equation"/>
+            <comment text="Declearing the variables "/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <declare name="Root1, Root2" type="Real" array="False" size=""/>
+            <comment text="receving the information from the user"/>
+            <output expression="&quot;Please enter the coefficent of x square&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter the coefficent of x&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Please enter the constant term&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="Calculating the given information to find the roots of the equation"/>
+            <assign variable="Root1" expression="-b/2*a+sqrt(b*b-4*a*c)/2*a"/>
+            <assign variable="Root2" expression="-b/2*a-sqrt(b*b-4*a*c)/2*a"/>
+            <comment text="printing the roots of the equation on the screen "/>
+            <output expression="&quot;The root of the equation is &quot;&amp; Root1" newline="True"/>
+            <output expression="&quot;The root of the equation is &quot;&amp; Root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

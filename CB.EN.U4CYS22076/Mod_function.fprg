@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:02:24 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzEwOjI2OjA4IEFNOzMwNjY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTA0OzExOjAyOjI0IEFNOzM7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program is helpful in finding the remimder"/>
+            <comment text="Declearing the variables"/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <comment text="collecting information from the user&#13;&#10;"/>
+            <output expression="&quot;Please enter the value of the dividend&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Please enter the value of the divisor&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Calculating the given information to find the reminder&#13;&#10;"/>
+            <assign variable="c" expression="Int(a/b)"/>
+            <assign variable="d" expression="a-b*c"/>
+            <output expression="&quot;The reminder of the equation is &quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
