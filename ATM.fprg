@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:17:20 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzA5OjA2OjA4IEFNOzMwNzc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzEwOjE3OjIwIEFNOzU7MzE3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO SBI ATM&quot;" newline="True"/>
+            <comment text="DECLARING VARIABLES"/>
+            <declare name="pin, AccountNumber, Balance, Withdrawal, PresentBalance, option, Newpin" type="Integer" array="False" size=""/>
+            <comment text="INPUT VALUES&#13;&#10;"/>
+            <assign variable="Balance" expression="1000"/>
+            <output expression="&quot;Please enter your account number&quot;" newline="True"/>
+            <input variable="AccountNumber"/>
+            <output expression="&quot;Please enter the pin&quot;" newline="True"/>
+            <input variable="Pin"/>
+            <comment text="USING IF TO CHEAK IF PIN IS CORRECT OR NOT"/>
+            <if expression="Pin=1234">
+                <then>
+                    <comment text="PROVIDING THE OPTIONS FOR THE USER"/>
+                    <output expression="&quot;Your requeest is proseccing&quot;" newline="True"/>
+                    <output expression="&quot;1)WITHDRAWAL&quot;" newline="True"/>
+                    <output expression="&quot;2)PIN CHANGE&quot;" newline="True"/>
+                    <output expression="&quot;3)DEPOSIT&quot;" newline="True"/>
+                    <output expression="&quot;4)ACCOUNT BALANCE&quot;" newline="True"/>
+                    <output expression="&quot;Please select the option by entering the number&quot;" newline="True"/>
+                    <input variable="option"/>
+                    <comment text="INPUT THE SELECTED OPTION AS &quot;option&quot;"/>
+                    <comment text="CHEAKING WHICH OPTION IS TYPED BY THE USER"/>
+                    <if expression="option=2">
+                        <then>
+                            <output expression="&quot;PLEASE ENTER THE NEW PIN&quot;" newline="True"/>
+                            <output expression="&quot;PLEASE CONFIRM THE NEW PIN&quot;" newline="True"/>
+                            <input variable="Newpin"/>
+                            <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="option=3">
+                                <then>
+                                    <output expression="&quot;Please enter the amount you want to deposit&quot;" newline="True"/>
+                                    <output expression="&quot;Proseccing&quot;" newline="True"/>
+                                    <output expression="&quot;Your amount has deposited to your bank account&quot;" newline="True"/>
+                                    <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="OPTION=4">
+                                        <then>
+                                            <output expression="&quot;Account Number-&quot;&amp; AccountNumber" newline="True"/>
+                                            <output expression="&quot;Account Balance&quot; &amp; Balance" newline="True"/>
+                                            <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="option=1">
+                                                <then>
+                                                    <output expression="&quot;Please enter the amount you want to withdraw&quot;" newline="True"/>
+                                                    <input variable="Withdrawal"/>
+                                                    <assign variable="PresentBalance" expression="Balance-Withdrawal"/>
+                                                    <if expression="PresentBalance&lt;0">
+                                                        <then>
+                                                            <output expression="&quot;Insufficent Funds&quot;" newline="True"/>
+                                                            <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="PresentBalance&lt;501">
+                                                                <then>
+                                                                    <output expression="&quot;The current Bank balance is less than minimum balance,Please deposit the money&quot;" newline="True"/>
+                                                                    <output expression="&quot;Account Number&quot;&amp; AccountNumber" newline="True"/>
+                                                                    <output expression="&quot;Present balance&quot; &amp;PresentBalance" newline="True"/>
+                                                                    <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Account Number&quot;&amp; AccountNumber" newline="True"/>
+                                                                    <output expression="&quot;Present Balance&quot;&amp; PresentBalance" newline="True"/>
+                                                                    <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Please enter the valid option&quot;" newline="True"/>
+                                                    <output expression="&quot;Try Again&quot;" newline="True"/>
+                                                    <comment text="IF AN OTHER OPTION IS TYPED THE THE REQUEST WILL BECOME INVALID"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;The pin you have entered is not correct.Please try again&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

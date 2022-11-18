@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:21:25 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzExOjExOjM3IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzExOjEyOjQzIEFNOzI7Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzA5OjA2OjA4IEFNO0FUTS5mcHJnOzcwNzM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTExLTE4OzExOjIxOjI1IEFNOzQ7MzE3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO SBI ATM&quot;" newline="True"/>
+            <comment text="DECLARING VARIABLES"/>
+            <declare name="pin, AccountNumber, Balance, Withdrawal, PresentBalance, option, Newpin, Pin1" type="Integer" array="False" size=""/>
+            <comment text="INPUT VALUES&#13;&#10;"/>
+            <assign variable="Balance" expression="1000"/>
+            <assign variable="Pin" expression="1234"/>
+            <output expression="&quot;Please enter your account number&quot;" newline="True"/>
+            <input variable="AccountNumber"/>
+            <output expression="&quot;Please enter the pin&quot;" newline="True"/>
+            <input variable="Pin1"/>
+            <if expression="Pin=Pin1">
+                <then>
+                    <comment text="IF THE PIN IS CORRECT THEN IT WILL ASK FOR THE AMOUNT FOR ITS WITHDRAWAL"/>
+                    <output expression="&quot;Please enter the amount you want to withdraw&quot;" newline="True"/>
+                    <input variable="Withdrawal"/>
+                    <assign variable="PresentBalance" expression="Balance-Withdrawal"/>
+                    <if expression="PresentBalance&lt;0">
+                        <then>
+                            <comment text="IF THE PRESENT BALANCE LESS THAN ZERO THE IT DISPLAYS INSUFFICIENT FUNDS"/>
+                            <output expression="&quot;Insufficent Funds&quot;" newline="True"/>
+                            <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <comment text="THE MINIMUM BALANCE IS 500"/>
+                            <comment text="IF THE PRESENT BALANCE IS LESS THAN 500 THEN IT DISPLAYS THE &quot;CURRENT BANK BALANCE IS LESS THAN MINIMUM BALANCE, PLEASE DEPOSIT THE AS SOON AS POSSIBLE&quot;"/>
+                            <if expression="PresentBalance&lt;501">
+                                <then>
+                                    <output expression="&quot;The current Bank balance is less than minimum balance,Please deposit the money as soon as possible&quot;" newline="True"/>
+                                    <output expression="&quot;Account Number&quot;&amp; AccountNumber" newline="True"/>
+                                    <output expression="&quot;Present balance&quot; &amp;PresentBalance" newline="True"/>
+                                    <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Account Number&quot;&amp; AccountNumber" newline="True"/>
+                                    <output expression="&quot;Present Balance&quot;&amp; PresentBalance" newline="True"/>
+                                    <output expression="&quot;THANK YOU FOR USING SBI&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="IF THE USER ENTERED THE INCORRECT PIN IT WILL SHOW TO TRY AGAIN"/>
+                    <output expression="&quot;You have entered the incorrect pin&quot;" newline="True"/>
+                    <output expression="&quot;Please try again&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
