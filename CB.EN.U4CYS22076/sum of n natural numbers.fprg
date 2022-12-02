@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:00:01 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTEyLTAyOzA5OjAwOjIzIEFNOzMwNjI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTEyLTAyOzEwOjAwOjAxIEFNOzc7MzE2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables"/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="addition" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <comment text="inputing the number&#13;&#10;"/>
+            <input variable="number"/>
+            <comment text="condition for while loop"/>
+            <while expression="number&lt;=10">
+                <comment text="sum of n numbers formula"/>
+                <assign variable="addition" expression="number*((number+1)/2)"/>
+                <output expression="&quot;The sum of first &quot;&amp;addition" newline="True"/>
+                <comment text="break point is used to break the loop"/>
+                <breakpoint expression="" always="True"/>
+            </while>
+            <comment text="if the number is greater than 10"/>
+            <output expression="&quot;invalid input&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

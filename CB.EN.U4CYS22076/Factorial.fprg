@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22076"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:04:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTEyLTAyOzA5OjQxOjMwIEFNOzMwNjU="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3NjsyMDIyMjNNQVlDMDA5NTsyMDIyLTEyLTAyOzEwOjA0OjA2IEFNOzEyOzMyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring the variables"/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number&quot;" newline="True"/>
+            <comment text="inputing the values"/>
+            <input variable="number"/>
+            <declare name="Product" type="Integer" array="False" size=""/>
+            <assign variable="Product" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <comment text="conditon for while loop"/>
+            <while expression="i&lt;=number">
+                <assign variable="Product" expression="i*Product"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <comment text="After the loop is compleated the the output appears"/>
+            <output expression="&quot;The factorial is &quot;&amp; Product" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
