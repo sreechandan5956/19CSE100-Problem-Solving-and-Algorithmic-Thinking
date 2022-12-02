@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Delhivery"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 07:18:56 PM"/>
+        <attribute name="created" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMi0wMjswNzowODoxMCBQTTszMDE0"/>
+        <attribute name="edited" value="RGVsaGl2ZXJ5O0RWLUxULVMtMTY4OTc7MjAyMi0xMi0wMjswNzoxODo1NiBQTTsxOzMxMzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to obtain the list of prime numbers in a certain range of numbers"/>
+            <declare name="a, n, i" type="Integer" array="False" size=""/>
+            <declare name="prime" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter the range of numbers&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="a" start="2" end="n" direction="inc" step="1">
+                <comment text="condition for a prime number"/>
+                <assign variable="prime" expression="true"/>
+                <for variable="i" start="2" end="a-1" direction="inc" step="1">
+                    <comment text="since the remainder should not be zero"/>
+                    <if expression="a % i ==0">
+                        <then>
+                            <assign variable="prime" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="prime == true">
+                    <then>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
