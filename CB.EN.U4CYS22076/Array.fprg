@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chennavaram arnav"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:23:01 AM"/>
+        <attribute name="created" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MDk6NDQ6MzYgQU07NDA4Ng=="/>
+        <attribute name="edited" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTE6MjM6MDEgQU07NTs0MTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variables"/>
+            <declare name="array" type="Integer" array="True" size="10"/>
+            <declare name="input, x" type="Integer" array="False" size=""/>
+            <comment text="Using the for loop for repeating the process"/>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter &quot;&amp;x+1&amp;&quot; integer value&quot;" newline="True"/>
+                <input variable="input"/>
+                <comment text="Asking and saving the information."/>
+                <assign variable="array[x]" expression="input"/>
+            </for>
+            <for variable="x" start="0" end="9" direction="inc" step="1">
+                <comment text="Displaying all values all at a time."/>
+                <output expression="&quot;The value of&quot;&amp;x+1&amp;&quot;integer is&quot;&amp;array[x]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

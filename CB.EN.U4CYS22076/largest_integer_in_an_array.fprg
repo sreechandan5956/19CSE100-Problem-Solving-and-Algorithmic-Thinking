@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="chennavaram arnav"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:58:43 AM"/>
+        <attribute name="created" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6MjE6MDEgQU07NDA2NQ=="/>
+        <attribute name="edited" value="Y2hlbm5hdmFyYW0gYXJuYXY7QVJOQVZST0ctQ0xTMlFPOzIwMjItMTItMDk7MTA6NTg6NDMgQU07Mzs0MTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the values"/>
+            <declare name="array" type="Integer" array="True" size="5"/>
+            <declare name="input, max, x" type="Integer" array="False" size=""/>
+            <comment text="entering the limits for the for loop."/>
+            <for variable="x" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Enter &quot;&amp;x+1&amp;&quot; value&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="array[x]" expression="input"/>
+            </for>
+            <comment text="asuming some value to get the end result."/>
+            <comment text="i.e the largest integer."/>
+            <assign variable="max" expression="array[0]"/>
+            <comment text="useing if loop to cheak the largest number and for loop to do it again and again."/>
+            <for variable="x" start="0" end="4" direction="inc" step="1">
+                <if expression="array[x]&gt;max">
+                    <then>
+                        <assign variable="max" expression="array[x]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <comment text="printing the largest value on the screen"/>
+            <output expression="&quot;The largest integer value in array is &quot;&amp;max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
