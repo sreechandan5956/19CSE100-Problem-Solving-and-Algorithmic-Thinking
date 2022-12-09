@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Roopak Palakurty"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:12:34 AM"/>
+        <attribute name="created" value="Um9vcGFrIFBhbGFrdXJ0eTtST09QQUtQQzsyMDIyLTEyLTA5OzA5OjM0OjI1IEFNOzM0ODY="/>
+        <attribute name="edited" value="Um9vcGFrIFBhbGFrdXJ0eTtST09QQUtQQzsyMDIyLTEyLTA5OzExOjEyOjM0IEFNOzM7MzU4NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rollnumber, s, totalmarks, average, inte, inte1" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter number of students&quot;" newline="True"/>
+            <input variable="N"/>
+            <comment text="som is array for number of students and the details in it"/>
+            <declare name="som" type="Integer" array="True" size="N"/>
+            <comment text="som1 is array for subjects"/>
+            <declare name="som1" type="Integer" array="True" size="5"/>
+            <comment text="inte is for no of students"/>
+            <for variable="inte" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;enter your rollnumber&quot;" newline="True"/>
+                <input variable="rollnumber"/>
+                <comment text="inte1 is for 5 subjects"/>
+                <for variable="inte1" start="0" end="4" direction="inc" step="1">
+                    <output expression="&quot;enter marks of the 5 subjects&quot;" newline="True"/>
+                    <input variable="s"/>
+                    <assign variable="som1[inte1]" expression="s"/>
+                </for>
+                <assign variable="totalmarks" expression="som1[0]+som1[1]+som1[2]+som1[3]+som1[4]"/>
+                <assign variable="average" expression="totalmarks/5"/>
+                <output expression="&quot;rollnumber=&quot;&amp;rollnumber" newline="True"/>
+                <output expression="&quot;s1=&quot;&amp;som1[0]&amp;&quot;s2=&quot;&amp;som1[1]&amp;&quot;s3=&quot;&amp;som1[2]&amp;&quot;s4=&quot;&amp;som1[3]&amp;&quot;s5=&quot;&amp;som1[4]" newline="True"/>
+                <output expression="&quot;your totalmarks is=&quot;&amp;totalmarks" newline="True"/>
+                <output expression="&quot;your average is=&quot;&amp;average" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
